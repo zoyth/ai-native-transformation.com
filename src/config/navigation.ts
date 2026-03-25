@@ -6,16 +6,15 @@ import { type NavigationConfig } from '@zoyth/simple-site-framework';
 export const navigation: NavigationConfig = {
   header: {
     logo: {
-      image: '',
+      image: '/images/logo.png',
       imageAlt: {
-        en: 'AI Native Transformation',
-        fr: 'AI Native Transformation',
+        en: 'ai-native trx',
+        fr: 'ai-native trx',
       },
       href: '/',
-      text: {
-        en: 'AI Native Transformation',
-        fr: 'AI Native Transformation',
-      },
+      width: 1203,
+      height: 217,
+      displayHeight: 36,
     },
     mainNav: [],
     utilityNav: [
