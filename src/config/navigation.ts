@@ -1,5 +1,5 @@
 // ABOUTME: Navigation configuration for the website.
-// ABOUTME: Minimal header with logo, footer with framework link and copyright.
+// ABOUTME: Minimal header with text logo, footer with contact and related links.
 
 import { type NavigationConfig } from '@zoyth/simple-site-framework';
 
@@ -23,18 +23,22 @@ export const navigation: NavigationConfig = {
   footer: {
     sections: [
       {
-        heading: { en: 'Resources', fr: 'Ressources' },
+        heading: { en: 'Contact', fr: 'Contact' },
+        links: [
+          {
+            id: 'email',
+            label: { en: 'f@cakemail.com', fr: 'f@cakemail.com' },
+            href: 'mailto:f@cakemail.com',
+          },
+        ],
+      },
+      {
+        heading: { en: 'Related', fr: 'Liens' },
         links: [
           {
             id: 'framework',
-            label: { en: 'Open-Source Framework', fr: 'Cadre open-source' },
+            label: { en: 'AI Transformation Framework', fr: 'Cadre de transformation IA' },
             href: 'https://ai.cakemail.com',
-            external: true,
-          },
-          {
-            id: 'github',
-            label: { en: 'GitHub', fr: 'GitHub' },
-            href: 'https://github.com/cakemail/ai-native-transformation',
             external: true,
           },
         ],

@@ -1,5 +1,5 @@
 // ABOUTME: Homepage content for the AI Native Transformation website.
-// ABOUTME: Hero section with bilingual content explaining the framework and app.
+// ABOUTME: Hero section describing the app: AI-coached transition planning for organizations.
 
 export const content = {
   metadata: {
@@ -11,12 +11,12 @@ export const content = {
   },
   hero: {
     headline: {
-      en: 'Transform Your Organization for the AI Era',
-      fr: 'Transformez votre organisation pour l\'ère de l\'IA',
+      en: 'Your Team\'s AI Transformation, Guided and Measured',
+      fr: 'La transformation IA de votre équipe, guidée et mesurée',
     },
     subheadline: {
-      en: 'An open-source framework and guided platform to move your team from AI-aware to AI-native — systematically, measurably, and at scale.',
-      fr: 'Un cadre open-source et une plateforme guidée pour faire passer votre équipe de sensibilisée à l\'IA à native de l\'IA — de manière systématique, mesurable et à grande échelle.',
+      en: 'An AI-coached platform where every employee builds a personal transition plan — and managers track the transformation across the organization.',
+      fr: 'Une plateforme coachée par IA où chaque employé construit un plan de transition personnel — et les gestionnaires suivent la transformation à travers l\'organisation.',
     },
     cta: {
       primary: {
@@ -28,8 +28,8 @@ export const content = {
       },
       secondary: {
         text: {
-          en: 'Read the Framework',
-          fr: 'Lire le cadre',
+          en: 'See the Framework',
+          fr: 'Voir le cadre',
         },
         href: 'https://ai.cakemail.com',
       },
