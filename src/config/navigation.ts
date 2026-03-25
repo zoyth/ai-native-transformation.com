@@ -18,17 +18,36 @@ export const navigation: NavigationConfig = {
       },
     },
     mainNav: [],
-    utilityNav: [],
+    utilityNav: [
+      {
+        id: 'login',
+        label: { en: 'Log in', fr: 'Se connecter' },
+        href: 'https://app.ai-native-transformation.com/',
+        external: true,
+      },
+    ],
   },
   footer: {
     sections: [
       {
+        heading: { en: 'App', fr: 'Application' },
+        links: [
+          {
+            id: 'login',
+            label: { en: 'Log in', fr: 'Se connecter' },
+            href: 'https://app.ai-native-transformation.com/',
+            external: true,
+          },
+        ],
+      },
+      {
         heading: { en: 'Contact', fr: 'Contact' },
         links: [
           {
-            id: 'email',
-            label: { en: 'f@cakemail.com', fr: 'f@cakemail.com' },
-            href: 'mailto:f@cakemail.com',
+            id: 'linkedin',
+            label: { en: 'François Lane on LinkedIn', fr: 'François Lane sur LinkedIn' },
+            href: 'https://www.linkedin.com/in/francoislane/',
+            external: true,
           },
         ],
       },

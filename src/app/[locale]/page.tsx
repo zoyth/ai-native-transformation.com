@@ -99,12 +99,12 @@ const cta = {
   en: {
     heading: 'Interested?',
     text: 'This app is in active development, currently piloted across a ~30-person team. If you\'re leading an AI transformation at your organization and want to learn more, get in touch.',
-    button: 'Contact François',
+    button: 'Contact François on LinkedIn',
   },
   fr: {
     heading: 'Intéressé?',
     text: 'Cette application est en développement actif, présentement en pilote avec une équipe d\'environ 30 personnes. Si vous menez une transformation IA dans votre organisation et souhaitez en savoir plus, contactez-nous.',
-    button: 'Contacter François',
+    button: 'Contacter François sur LinkedIn',
   },
 };
 
@@ -185,7 +185,9 @@ export default async function HomePage({
             {cta[t].text}
           </p>
           <a
-            href="mailto:f@cakemail.com"
+            href="https://www.linkedin.com/in/francoislane/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-primary-dark hover:bg-slate-100"
           >
             {cta[t].button}

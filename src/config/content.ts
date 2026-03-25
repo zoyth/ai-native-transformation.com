@@ -18,13 +18,14 @@ export const content = {
       en: 'An AI-coached platform where every employee builds a personal transition plan — and managers track the transformation across the organization.',
       fr: 'Une plateforme coachée par IA où chaque employé construit un plan de transition personnel — et les gestionnaires suivent la transformation à travers l\'organisation.',
     },
+    variant: 'dark' as const,
     cta: {
       primary: {
         text: {
           en: 'Get in Touch',
           fr: 'Nous contacter',
         },
-        href: 'mailto:f@cakemail.com',
+        href: 'https://www.linkedin.com/in/francoislane/',
       },
       secondary: {
         text: {
