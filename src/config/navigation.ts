@@ -14,7 +14,7 @@ export const navigation: NavigationConfig = {
       href: '/',
       width: 1203,
       height: 217,
-      displayHeight: 36,
+      displayHeight: 29,
     },
     mainNav: [],
     utilityNav: [
