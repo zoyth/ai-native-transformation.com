@@ -47,6 +47,10 @@ const features = {
     heading: 'Platform Features',
     items: [
       {
+        title: 'AI Literacy Assessment',
+        description: 'A baseline questionnaire that places every employee on a three-tier maturity scale — from AI-aware to AI-native. Engineering roles get an additional granular rung system. Retakeable over time to track growth.',
+      },
+      {
         title: 'AI Coaching Sessions',
         description: 'A streaming chat interface where Claude guides employees through role assessment, AI-first vision, gap analysis, system design, metrics, and milestone planning. Each step produces a reviewable artifact.',
       },
@@ -71,6 +75,10 @@ const features = {
   fr: {
     heading: 'Fonctionnalités',
     items: [
+      {
+        title: 'Évaluation de la littératie IA',
+        description: 'Un questionnaire de base qui situe chaque employé sur une échelle de maturité à trois niveaux — de sensibilisé à l\'IA jusqu\'à natif de l\'IA. Les rôles techniques ont une échelle granulaire additionnelle. Peut être repris dans le temps pour suivre la progression.',
+      },
       {
         title: 'Sessions de coaching IA',
         description: 'Une interface de chat en streaming où Claude guide les employés à travers l\'évaluation du rôle, la vision IA, l\'analyse des écarts, la conception de systèmes, les métriques et la planification des jalons. Chaque étape produit un artéfact révisable.',
