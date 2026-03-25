@@ -40,6 +40,10 @@ export async function generateMetadata({
         fr: 'Un cadre open-source et une plateforme guidée pour faire passer votre équipe de sensibilisée à l\'IA à native de l\'IA — de manière systématique, mesurable et à grande échelle.',
       },
     }),
+    icons: {
+      icon: '/images/favicon.png',
+      apple: '/images/favicon.png',
+    },
   };
 }
 
