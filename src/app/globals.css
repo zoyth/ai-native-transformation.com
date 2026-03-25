@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   );
 }
 
+.bg-hero-gradient,
 .bg-hero-gradient-dark {
   background: linear-gradient(
     135deg,
