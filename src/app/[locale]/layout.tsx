@@ -70,6 +70,13 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={getTextDirection(locale)}>
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7N0SVJPEMP" />
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-7N0SVJPEMP');
+        `}} />
         <style dangerouslySetInnerHTML={{ __html: themeCSS }} />
       </head>
       <body

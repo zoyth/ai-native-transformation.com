@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     const securityHeaders = generateSecurityHeaders({
+      presets: ['google-analytics'],
       contentSecurityPolicy: {
         'frame-ancestors': ["'none'"],
       },
