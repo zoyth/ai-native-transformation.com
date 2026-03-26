@@ -11,7 +11,7 @@ const howItWorks = {
     steps: [
       {
         title: 'Assess',
-        description: 'Every employee takes a maturity assessment to establish their baseline — from AI-aware to AI-native. Engineering roles get a more granular scale.',
+        description: 'Every employee takes a maturity assessment to establish their baseline across five tiers — from Pre-AI to AI-Native. Engineering roles get an additional granular rung ladder.',
       },
       {
         title: 'Coach',
@@ -28,7 +28,7 @@ const howItWorks = {
     steps: [
       {
         title: 'Évaluer',
-        description: 'Chaque employé complète une évaluation de maturité pour établir son point de départ — de sensibilisé à l\'IA jusqu\'à natif de l\'IA. Les rôles techniques ont une échelle plus granulaire.',
+        description: 'Chaque employé complète une évaluation de maturité pour établir son point de départ sur cinq niveaux — de Pré-IA à Natif de l\'IA. Les rôles techniques ont une échelle granulaire additionnelle.',
       },
       {
         title: 'Coacher',
@@ -48,19 +48,19 @@ const features = {
     items: [
       {
         title: 'AI Literacy Assessment',
-        description: 'A baseline questionnaire that places every employee on a three-tier maturity scale — from AI-aware to AI-native. Engineering roles get an additional granular rung system. Retakeable over time to track growth.',
+        description: 'A structured self-assessment that places every employee on a five-tier maturity scale — from Pre-AI to AI-Native. Engineering roles get an additional rung ladder from Assisted Coding to Autonomous Production.',
       },
       {
         title: 'AI Coaching Sessions',
-        description: 'A streaming chat interface where Claude guides employees through role assessment, AI-first vision, gap analysis, system design, metrics, and milestone planning. Each step produces a reviewable artifact.',
+        description: 'A streaming chat interface where an AI coach guides employees through role assessment, AI-first vision, gap analysis, system design, metrics, and milestone planning. Each step produces a scored artifact that employees can revisit and refine.',
       },
       {
         title: 'Workflow Census',
-        description: 'A conversational AI intake that documents business workflows across the organization — capturing time, coordination overhead, tools, and bottlenecks. Each workflow gets an AI opportunity score (1-100) to identify the highest-value transformation candidates.',
+        description: 'A conversational AI intake that documents business workflows across the organization — capturing triggers, inputs/outputs, participants, duration, coordination time, waiting time, and bottlenecks. Each workflow gets an AI opportunity score (1-100) with org-wide category breakdown.',
       },
       {
         title: 'Transition Plan Builder',
-        description: 'Coaching artifacts are assembled into a structured transition plan that employees can edit before submitting for review. Full revision history with snapshots tracks how plans evolve.',
+        description: 'Scored coaching artifacts are assembled into a structured transition plan that employees can edit before submitting. Plans flow through Draft, Submitted, In Review, and Approved stages with full revision history and snapshots.',
       },
       {
         title: 'Manager Review Dashboard',
@@ -77,19 +77,19 @@ const features = {
     items: [
       {
         title: 'Évaluation de la littératie IA',
-        description: 'Un questionnaire de base qui situe chaque employé sur une échelle de maturité à trois niveaux — de sensibilisé à l\'IA jusqu\'à natif de l\'IA. Les rôles techniques ont une échelle granulaire additionnelle. Peut être repris dans le temps pour suivre la progression.',
+        description: 'Une auto-évaluation structurée qui situe chaque employé sur une échelle de maturité à cinq niveaux — de Pré-IA à Natif de l\'IA. Les rôles techniques ont une échelle additionnelle allant du Codage assisté à la Production autonome.',
       },
       {
         title: 'Sessions de coaching IA',
-        description: 'Une interface de chat en streaming où Claude guide les employés à travers l\'évaluation du rôle, la vision IA, l\'analyse des écarts, la conception de systèmes, les métriques et la planification des jalons. Chaque étape produit un artéfact révisable.',
+        description: 'Une interface de chat en streaming où un coach IA guide les employés à travers l\'évaluation du rôle, la vision IA, l\'analyse des écarts, la conception de systèmes, les métriques et la planification des jalons. Chaque étape produit un artéfact noté que les employés peuvent revisiter et peaufiner.',
       },
       {
         title: 'Recensement des flux de travail',
-        description: 'Une saisie conversationnelle par IA qui documente les flux de travail à travers l\'organisation — temps, coordination, outils et goulots d\'étranglement. Chaque flux reçoit un score d\'opportunité IA (1-100) pour identifier les meilleurs candidats à la transformation.',
+        description: 'Une saisie conversationnelle par IA qui documente les flux de travail à travers l\'organisation — déclencheurs, entrées/sorties, participants, durée, temps de coordination, temps d\'attente et goulots d\'étranglement. Chaque flux reçoit un score d\'opportunité IA (1-100) avec ventilation par catégorie à l\'échelle de l\'organisation.',
       },
       {
         title: 'Constructeur de plans de transition',
-        description: 'Les artéfacts du coaching sont assemblés en un plan de transition structuré que les employés peuvent modifier avant soumission. Un historique complet avec captures suit l\'évolution des plans.',
+        description: 'Les artéfacts notés du coaching sont assemblés en un plan de transition structuré que les employés peuvent modifier avant soumission. Les plans passent par les étapes Brouillon, Soumis, En révision et Approuvé avec un historique complet et des captures.',
       },
       {
         title: 'Tableau de bord gestionnaire',
