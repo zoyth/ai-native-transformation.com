@@ -19,7 +19,7 @@ export const navigation: NavigationConfig = {
     mainNav: [
       {
         id: 'product',
-        label: { en: 'Product', fr: 'Produit' },
+        label: { en: 'Platform', fr: 'Plateforme' },
         href: '/product',
       },
       {

@@ -149,12 +149,12 @@ export default async function ProductPage({
   return (
     <>
       {/* Page header */}
-      <section className="bg-hero-gradient-dark py-20">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-white sm:text-5xl">
+      <section className="pb-8 pt-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-bold text-primary sm:text-5xl">
             {t === 'fr' ? 'La plateforme' : 'The Platform'}
           </h1>
-          <p className="mt-4 text-lg text-slate-200">
+          <p className="mt-6 max-w-3xl text-lg text-slate-600 leading-relaxed">
             {t === 'fr'
               ? 'Un système complet pour évaluer, coacher et suivre la transformation IA de chaque employé.'
               : 'A complete system to assess, coach, and track every employee\'s AI transformation.'}
@@ -163,24 +163,25 @@ export default async function ProductPage({
       </section>
 
       {/* How it works */}
-      <section className="bg-brand-gradient-light py-20">
+      <section className="py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-12 text-center text-3xl font-bold text-slate-900">
+          <div className="mb-12 border-t border-slate-200" />
+          <h2 className="mb-10 text-2xl font-bold text-slate-900">
             {howItWorks[t].heading}
           </h2>
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-3">
             {howItWorks[t].steps.map((step, i) => (
               <div
                 key={step.title}
-                className="rounded-xl bg-white p-8 shadow-md"
+                className="rounded-xl border border-slate-200 p-6"
               >
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-lg font-bold text-white">
+                <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-full bg-slate-800 text-sm font-bold text-white">
                   {i + 1}
                 </div>
-                <h3 className="mb-3 text-xl font-bold text-slate-900">
+                <h3 className="mb-2 text-lg font-bold text-slate-900">
                   {step.title}
                 </h3>
-                <p className="text-slate-700 leading-relaxed">
+                <p className="text-sm text-slate-600 leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -190,21 +191,22 @@ export default async function ProductPage({
       </section>
 
       {/* Features */}
-      <section className="py-20">
+      <section className="pb-20 pt-4">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-12 text-center text-3xl font-bold text-slate-900">
+          <div className="mb-12 border-t border-slate-200" />
+          <h2 className="mb-10 text-2xl font-bold text-slate-900">
             {features[t].heading}
           </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {features[t].items.map((feature) => (
               <div
                 key={feature.title}
-                className="rounded-xl border border-slate-200 p-8"
+                className="rounded-xl border border-slate-200 p-6"
               >
-                <h3 className="mb-3 text-xl font-bold text-slate-900">
+                <h3 className="mb-2 text-lg font-bold text-slate-900">
                   {feature.title}
                 </h3>
-                <p className="text-slate-700 leading-relaxed">
+                <p className="text-sm text-slate-600 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -214,19 +216,19 @@ export default async function ProductPage({
       </section>
 
       {/* Contact CTA */}
-      <section className="bg-hero-gradient-dark py-20">
+      <section className="border-t border-slate-200 py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="mb-4 text-3xl font-bold text-white">
+          <h2 className="mb-4 text-2xl font-bold text-slate-900">
             {cta[t].heading}
           </h2>
-          <p className="mb-8 text-lg text-slate-200">
+          <p className="mb-8 text-slate-600 leading-relaxed">
             {cta[t].text}
           </p>
           <a
             href="https://www.linkedin.com/in/francoislane/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-primary-dark hover:bg-slate-100"
+            className="inline-flex items-center rounded-lg border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 hover:bg-slate-50"
           >
             {cta[t].button}
           </a>
