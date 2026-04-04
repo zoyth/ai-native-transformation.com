@@ -31,6 +31,11 @@ export const navigation: NavigationConfig = {
     ],
     utilityNav: [
       {
+        id: 'sign-up',
+        label: { en: 'Early Access', fr: 'Accès anticipé' },
+        href: '/sign-up',
+      },
+      {
         id: 'login',
         label: { en: 'Log in', fr: 'Se connecter' },
         href: 'https://app.ai-native-transformation.com/',
@@ -43,6 +48,16 @@ export const navigation: NavigationConfig = {
       {
         heading: { en: 'App', fr: 'Application' },
         links: [
+          {
+            id: 'platform',
+            label: { en: 'Platform', fr: 'Plateforme' },
+            href: '/product',
+          },
+          {
+            id: 'sign-up',
+            label: { en: 'Early Access', fr: 'Accès anticipé' },
+            href: '/sign-up',
+          },
           {
             id: 'login',
             label: { en: 'Log in', fr: 'Se connecter' },
