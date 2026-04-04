@@ -106,7 +106,7 @@ const features = {
 const cta = {
   en: {
     heading: 'Ready to Transform Your Team?',
-    text: 'Currently in pilot with three SaaS companies undergoing AI transformation. If you\'re leading a 20–200 person team and want to make AI a core competency, let\'s talk.',
+    text: 'Currently in pilot with three SaaS companies undergoing AI transformation. If you\'re leading a 20-200 person team and want to make AI a core competency, let\'s talk.',
     button: 'Connect on LinkedIn',
   },
   fr: {
@@ -137,7 +137,7 @@ export default async function HomePage({
         <p className="text-sm font-medium tracking-wide text-slate-300 uppercase">
           {t === 'fr'
             ? 'Conçu pour les entreprises SaaS de 20 à 200 employés prêtes à faire de l\'IA une compétence fondamentale.'
-            : 'Built for SaaS companies with 20–200 employees ready to make AI a core competency.'}
+            : 'Built for SaaS companies with 20-200 employees ready to make AI a core competency.'}
         </p>
       </div>
 
@@ -201,7 +201,7 @@ export default async function HomePage({
           <p className="text-slate-700 leading-relaxed">
             {t === 'fr'
               ? 'Ce cadre a été conçu par François Lane, qui dirige actuellement la transformation IA de trois entreprises SaaS. Il n\'est pas né d\'une théorie — il a été construit en réponse aux défis réels d\'amener des équipes de 20 à 200 personnes de « curieux de l\'IA » à « natifs de l\'IA », un employé à la fois.'
-              : 'This framework was designed by François Lane, who is currently leading the AI transformation of three SaaS companies. It wasn\'t born from theory — it was built in response to the real challenges of moving teams of 20–200 people from "AI-curious" to "AI-native," one employee at a time.'}
+              : 'This framework was designed by François Lane, who is currently leading the AI transformation of three SaaS companies. It wasn\'t born from theory — it was built in response to the real challenges of moving teams of 20-200 people from "AI-curious" to "AI-native," one employee at a time.'}
           </p>
         </div>
       </section>
