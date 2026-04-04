@@ -16,7 +16,19 @@ export const navigation: NavigationConfig = {
       height: 217,
       displayHeight: 29,
     },
-    mainNav: [],
+    mainNav: [
+      {
+        id: 'product',
+        label: { en: 'Product', fr: 'Produit' },
+        href: '/product',
+      },
+      {
+        id: 'framework',
+        label: { en: 'Framework', fr: 'Cadre' },
+        href: 'https://framework.ai-native-transformation.com',
+        external: true,
+      },
+    ],
     utilityNav: [
       {
         id: 'login',

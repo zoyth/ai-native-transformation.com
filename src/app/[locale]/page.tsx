@@ -42,67 +42,6 @@ const howItWorks = {
   },
 };
 
-const features = {
-  en: {
-    heading: 'Platform Features',
-    items: [
-      {
-        title: 'AI Literacy Assessment',
-        description: 'Know exactly where your team stands — and where the gaps are. Every employee takes a scenario-based self-assessment across five maturity tiers, from Pre-AI to AI-Native. Engineering roles get an additional granular rung ladder.',
-      },
-      {
-        title: 'AI Coaching Sessions',
-        description: 'Every employee gets a personal AI coach that knows their role, their workflows, and their maturity level. Six structured conversations produce a concrete transition plan — not a generic training module.',
-      },
-      {
-        title: 'Workflow Census',
-        description: 'Surface the hidden coordination tax across your organization. A conversational AI interviews each employee about their recurring work, capturing time, dependencies, bottlenecks, and an AI opportunity score for every workflow.',
-      },
-      {
-        title: 'Transition Plan Builder',
-        description: 'Turn coaching into commitment. Artifacts from each coaching session are assembled into a structured transition plan that employees own, edit, and submit for review — with full revision history.',
-      },
-      {
-        title: 'Manager Review Dashboard',
-        description: 'See who\'s progressing and who needs support at a glance. Track each direct report\'s maturity baseline, coaching progress, and plan status. Score plans on four criteria with AI pre-scoring to speed up reviews.',
-      },
-      {
-        title: 'Admin Analytics',
-        description: 'Get a strategic view of your transformation — not just a list of responses. Adoption funnels, tier distribution, workflow opportunity matrices, ghost time analysis, and dependency bottleneck maps across the entire organization.',
-      },
-    ],
-  },
-  fr: {
-    heading: 'Fonctionnalités',
-    items: [
-      {
-        title: 'Évaluation de la littératie IA',
-        description: 'Sachez exactement où en est votre équipe — et où sont les écarts. Chaque employé complète une auto-évaluation par scénarios sur cinq niveaux de maturité, de Pré-IA à Natif de l\'IA. Les rôles techniques ont une échelle granulaire additionnelle.',
-      },
-      {
-        title: 'Sessions de coaching IA',
-        description: 'Chaque employé bénéficie d\'un coach IA personnel qui connaît son rôle, ses flux de travail et son niveau de maturité. Six conversations structurées produisent un plan de transition concret — pas un module de formation générique.',
-      },
-      {
-        title: 'Recensement des flux de travail',
-        description: 'Révélez la taxe de coordination cachée dans votre organisation. Une IA conversationnelle interroge chaque employé sur son travail récurrent, capturant le temps, les dépendances, les goulots d\'étranglement et un score d\'opportunité IA pour chaque flux.',
-      },
-      {
-        title: 'Constructeur de plans de transition',
-        description: 'Transformez le coaching en engagement. Les artéfacts de chaque session sont assemblés en un plan de transition structuré que les employés possèdent, modifient et soumettent pour révision — avec un historique complet.',
-      },
-      {
-        title: 'Tableau de bord gestionnaire',
-        description: 'Voyez d\'un coup d\'œil qui progresse et qui a besoin de soutien. Suivez la maturité de base, la progression du coaching et le statut des plans de chaque subordonné. Évaluez les plans selon quatre critères avec pré-évaluation IA.',
-      },
-      {
-        title: 'Analytiques administrateur',
-        description: 'Obtenez une vue stratégique de votre transformation — pas seulement une liste de réponses. Entonnoirs d\'adoption, distribution des niveaux, matrices d\'opportunités, analyse du temps fantôme et cartographie des goulots de dépendance à l\'échelle de l\'organisation.',
-      },
-    ],
-  },
-};
-
 const cta = {
   en: {
     heading: 'Ready to Transform Your Team?',
@@ -168,27 +107,23 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Features */}
-      <section className="py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-12 text-center text-3xl font-bold text-slate-900">
-            {features[t].heading}
+      {/* Product teaser */}
+      <section className="py-16 text-center">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-2xl font-bold text-slate-900">
+            {t === 'fr' ? 'Évaluation, coaching, plans de transition et analytiques' : 'Assessment, Coaching, Transition Plans, and Analytics'}
           </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {features[t].items.map((feature) => (
-              <div
-                key={feature.title}
-                className="rounded-xl border border-slate-200 p-8"
-              >
-                <h3 className="mb-3 text-xl font-bold text-slate-900">
-                  {feature.title}
-                </h3>
-                <p className="text-slate-700 leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
+          <p className="mb-6 text-slate-700 leading-relaxed">
+            {t === 'fr'
+              ? 'Six modules intégrés qui couvrent le parcours complet — de l\'évaluation initiale au tableau de bord de suivi organisationnel.'
+              : 'Six integrated modules that cover the full journey — from initial assessment to org-wide tracking dashboards.'}
+          </p>
+          <a
+            href={`/${locale}/product`}
+            className="inline-flex items-center rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white hover:bg-primary-hover"
+          >
+            {t === 'fr' ? 'Voir la plateforme' : 'See the Platform'}
+          </a>
         </div>
       </section>
 
