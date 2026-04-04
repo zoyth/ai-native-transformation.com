@@ -56,7 +56,7 @@ export const navigation: NavigationConfig = {
           {
             id: 'framework',
             label: { en: 'AI Transformation Framework', fr: 'Cadre de transformation IA' },
-            href: 'https://ai.cakemail.com',
+            href: 'https://framework.ai-native-transformation.com',
             external: true,
           },
         ],

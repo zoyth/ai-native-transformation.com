@@ -7,7 +7,7 @@ export const content = {
     siteUrl: 'https://ai-native-transformation.com',
     defaultLocale: 'en',
     supportedLocales: ['en', 'fr'],
-    contactEmail: 'f@cakemail.com',
+    contactEmail: '',
   },
   hero: {
     headline: {
@@ -32,7 +32,7 @@ export const content = {
           en: 'See the Framework',
           fr: 'Voir le cadre',
         },
-        href: 'https://ai.cakemail.com',
+        href: 'https://framework.ai-native-transformation.com',
       },
     },
   },
