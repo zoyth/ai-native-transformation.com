@@ -150,7 +150,7 @@ export default async function ProductPage({
     <>
       {/* Page header */}
       <section className="pb-8 pt-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-primary sm:text-5xl">
             {t === 'fr' ? 'La plateforme' : 'The Platform'}
           </h1>
@@ -164,7 +164,7 @@ export default async function ProductPage({
 
       {/* How it works */}
       <section className="py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4">
           <div className="mb-12 border-t border-slate-200" />
           <h2 className="mb-10 text-2xl font-bold text-slate-900">
             {howItWorks[t].heading}
@@ -192,7 +192,7 @@ export default async function ProductPage({
 
       {/* Features */}
       <section className="pb-20 pt-4">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4">
           <div className="mb-12 border-t border-slate-200" />
           <h2 className="mb-10 text-2xl font-bold text-slate-900">
             {features[t].heading}
@@ -217,7 +217,7 @@ export default async function ProductPage({
 
       {/* Contact CTA */}
       <section className="border-t border-slate-200 py-16">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-3xl px-4 text-center">
           <h2 className="mb-4 text-2xl font-bold text-slate-900">
             {cta[t].heading}
           </h2>

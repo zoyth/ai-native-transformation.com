@@ -82,7 +82,7 @@ export default async function HomePage({
 
       {/* How it works */}
       <section className="bg-brand-gradient-light py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4">
           <h2 className="mb-12 text-center text-3xl font-bold text-slate-900">
             {howItWorks[t].heading}
           </h2>
@@ -129,7 +129,7 @@ export default async function HomePage({
 
       {/* Credibility */}
       <section className="bg-slate-50 py-16">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-3xl px-4 text-center">
           <h2 className="mb-4 text-xl font-bold text-slate-900">
             {t === 'fr' ? 'Qui est derrière ce projet' : 'Who Built This'}
           </h2>
@@ -143,7 +143,7 @@ export default async function HomePage({
 
       {/* Contact CTA */}
       <section className="bg-hero-gradient-dark py-20">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-3xl px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold text-white">
             {cta[t].heading}
           </h2>
