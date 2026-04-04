@@ -6,6 +6,9 @@ import { generateI18nRewrites, generateI18nRedirects, generateSecurityHeaders } 
 import { i18nConfig } from './src/config/i18n';
 
 const nextConfig: NextConfig = {
+  turbopack: {
+    root: import.meta.dirname,
+  },
   reactStrictMode: true,
   compress: true,
   poweredByHeader: false,
