@@ -49,6 +49,7 @@ const features = {
       {
         title: 'AI Literacy Assessment',
         description: 'Know exactly where your team stands — and where the gaps are. Every employee takes a scenario-based self-assessment across individual tiers, from Pre-AI to AI-Native. Engineering roles get an additional rung ladder.',
+        link: { text: 'Try it free', href: 'https://app.ai-native-transformation.com/assess' },
       },
       {
         title: 'AI Coaching Sessions',
@@ -78,6 +79,7 @@ const features = {
       {
         title: 'Évaluation de la littératie IA',
         description: 'Sachez exactement où en est votre équipe — et où sont les écarts. Chaque employé complète une auto-évaluation par scénarios sur les niveaux individuels, de Pré-IA à Natif de l\'IA. Les rôles techniques ont une échelle d\'échelons additionnelle.',
+        link: { text: 'Essayer gratuitement', href: 'https://app.ai-native-transformation.com/assess' },
       },
       {
         title: 'Sessions de coaching IA',
@@ -198,7 +200,7 @@ export default async function ProductPage({
             {features[t].heading}
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {features[t].items.map((feature) => (
+            {features[t].items.map((feature: { title: string; description: string; link?: { text: string; href: string } }) => (
               <div
                 key={feature.title}
                 className="rounded-xl border border-slate-200 p-6"
@@ -209,6 +211,16 @@ export default async function ProductPage({
                 <p className="text-base text-slate-600 leading-relaxed">
                   {feature.description}
                 </p>
+                {feature.link && (
+                  <a
+                    href={feature.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block text-base font-medium text-primary hover:text-primary-hover"
+                  >
+                    {feature.link.text} &rarr;
+                  </a>
+                )}
               </div>
             ))}
           </div>

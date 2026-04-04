@@ -29,10 +29,10 @@ export const content = {
       },
       secondary: {
         text: {
-          en: 'See the Framework',
-          fr: 'Voir le cadre',
+          en: 'Take the Free Assessment',
+          fr: 'Faire l\'évaluation gratuite',
         },
-        href: 'https://framework.ai-native-transformation.com',
+        href: 'https://app.ai-native-transformation.com/assess',
       },
     },
   },

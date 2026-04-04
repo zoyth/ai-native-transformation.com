@@ -23,6 +23,12 @@ export const navigation: NavigationConfig = {
         href: '/product',
       },
       {
+        id: 'assessment',
+        label: { en: 'Assessment', fr: 'Évaluation' },
+        href: 'https://app.ai-native-transformation.com/assess',
+        external: true,
+      },
+      {
         id: 'framework',
         label: { en: 'Framework', fr: 'Cadre' },
         href: 'https://framework.ai-native-transformation.com',
@@ -57,6 +63,12 @@ export const navigation: NavigationConfig = {
             id: 'sign-up',
             label: { en: 'Early Access', fr: 'Accès anticipé' },
             href: '/sign-up',
+          },
+          {
+            id: 'assessment',
+            label: { en: 'AI Maturity Assessment', fr: 'Évaluation de maturité IA' },
+            href: 'https://app.ai-native-transformation.com/assess',
+            external: true,
           },
           {
             id: 'login',
