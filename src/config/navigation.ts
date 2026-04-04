@@ -25,7 +25,10 @@ export const navigation: NavigationConfig = {
       {
         id: 'assessment',
         label: { en: 'Assessment', fr: 'Évaluation' },
-        href: 'https://app.ai-native-transformation.com/assess',
+        href: {
+          en: 'https://app.ai-native-transformation.com/assess?lang=en',
+          fr: 'https://app.ai-native-transformation.com/assess?lang=fr',
+        },
         external: true,
       },
       {
@@ -67,7 +70,10 @@ export const navigation: NavigationConfig = {
           {
             id: 'assessment',
             label: { en: 'AI Maturity Assessment', fr: 'Évaluation de maturité IA' },
-            href: 'https://app.ai-native-transformation.com/assess',
+            href: {
+              en: 'https://app.ai-native-transformation.com/assess?lang=en',
+              fr: 'https://app.ai-native-transformation.com/assess?lang=fr',
+            },
             external: true,
           },
           {
