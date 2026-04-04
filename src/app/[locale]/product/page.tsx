@@ -11,7 +11,7 @@ const howItWorks = {
     steps: [
       {
         title: 'Assess',
-        description: 'Every employee takes a maturity assessment to establish their baseline across five tiers — from Pre-AI to AI-Native. Engineering roles get an additional granular rung ladder.',
+        description: 'Every employee takes a maturity assessment to establish their baseline — individuals are placed on a tier scale, engineering roles on an additional rung ladder.',
       },
       {
         title: 'Coach',
@@ -19,7 +19,7 @@ const howItWorks = {
       },
       {
         title: 'Review',
-        description: 'Managers review submitted plans on four criteria — self-contained, testable, constrained, and decomposable — with AI-assisted pre-scoring to speed things up.',
+        description: 'Managers review submitted plans against specification primitives — with AI-assisted pre-scoring to speed things up.',
       },
     ],
   },
@@ -28,7 +28,7 @@ const howItWorks = {
     steps: [
       {
         title: 'Évaluer',
-        description: 'Chaque employé complète une évaluation de maturité pour établir son point de départ sur cinq niveaux — de Pré-IA à Natif de l\'IA. Les rôles techniques ont une échelle granulaire additionnelle.',
+        description: 'Chaque employé complète une évaluation de maturité — les individus sont placés sur une échelle de niveaux, les rôles techniques sur une échelle d\'échelons additionnelle.',
       },
       {
         title: 'Coacher',
@@ -36,7 +36,7 @@ const howItWorks = {
       },
       {
         title: 'Réviser',
-        description: 'Les gestionnaires révisent les plans soumis selon quatre critères — autonome, vérifiable, délimité et décomposable — avec une pré-évaluation IA pour accélérer le processus.',
+        description: 'Les gestionnaires révisent les plans soumis selon les primitives de spécification — avec une pré-évaluation IA pour accélérer le processus.',
       },
     ],
   },
@@ -48,7 +48,7 @@ const features = {
     items: [
       {
         title: 'AI Literacy Assessment',
-        description: 'Know exactly where your team stands — and where the gaps are. Every employee takes a scenario-based self-assessment across five maturity tiers, from Pre-AI to AI-Native. Engineering roles get an additional granular rung ladder.',
+        description: 'Know exactly where your team stands — and where the gaps are. Every employee takes a scenario-based self-assessment across individual tiers, from Pre-AI to AI-Native. Engineering roles get an additional rung ladder.',
       },
       {
         title: 'AI Coaching Sessions',
@@ -64,7 +64,7 @@ const features = {
       },
       {
         title: 'Manager Review Dashboard',
-        description: 'See who\'s progressing and who needs support at a glance. Track each direct report\'s maturity baseline, coaching progress, and plan status. Score plans on four criteria with AI pre-scoring to speed up reviews.',
+        description: 'See who\'s progressing and who needs support at a glance. Track each direct report\'s maturity baseline, coaching progress, and plan status. Score plans against specification primitives with AI pre-scoring to speed up reviews.',
       },
       {
         title: 'Admin Analytics',
@@ -77,7 +77,7 @@ const features = {
     items: [
       {
         title: 'Évaluation de la littératie IA',
-        description: 'Sachez exactement où en est votre équipe — et où sont les écarts. Chaque employé complète une auto-évaluation par scénarios sur cinq niveaux de maturité, de Pré-IA à Natif de l\'IA. Les rôles techniques ont une échelle granulaire additionnelle.',
+        description: 'Sachez exactement où en est votre équipe — et où sont les écarts. Chaque employé complète une auto-évaluation par scénarios sur les niveaux individuels, de Pré-IA à Natif de l\'IA. Les rôles techniques ont une échelle d\'échelons additionnelle.',
       },
       {
         title: 'Sessions de coaching IA',
@@ -93,7 +93,7 @@ const features = {
       },
       {
         title: 'Tableau de bord gestionnaire',
-        description: 'Voyez d\'un coup d\'œil qui progresse et qui a besoin de soutien. Suivez la maturité de base, la progression du coaching et le statut des plans de chaque subordonné. Évaluez les plans selon quatre critères avec pré-évaluation IA.',
+        description: 'Voyez d\'un coup d\'œil qui progresse et qui a besoin de soutien. Suivez la maturité de base, la progression du coaching et le statut des plans de chaque subordonné. Évaluez les plans selon les primitives de spécification avec pré-évaluation IA.',
       },
       {
         title: 'Analytiques administrateur',
@@ -127,8 +127,8 @@ export async function generateMetadata({
     locale,
     path: '/product',
     title: {
-      en: 'Product | AI Native Transformation',
-      fr: 'Produit | AI Native Transformation',
+      en: 'Platform | AI Native Transformation',
+      fr: 'Plateforme | AI Native Transformation',
     },
     description: {
       en: 'An AI-coached platform where every employee builds a personal transition plan — assess, coach, review, and track across the organization.',
@@ -156,8 +156,8 @@ export default async function ProductPage({
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-slate-600 leading-relaxed">
             {t === 'fr'
-              ? 'Un système complet pour évaluer, coacher et suivre la transformation IA de chaque employé.'
-              : 'A complete system to assess, coach, and track every employee\'s AI transformation.'}
+              ? 'La plateforme opérationnalise le cadre de transformation IA — transformant la théorie en action individuelle. Évaluer, coacher et suivre la transformation de chaque employé.'
+              : 'The platform operationalizes the AI-Native Transformation Framework — turning theory into individual action. Assess, coach, and track every employee\'s transformation.'}
           </p>
         </div>
       </section>

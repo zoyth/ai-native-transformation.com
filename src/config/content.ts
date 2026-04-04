@@ -11,12 +11,12 @@ export const content = {
   },
   hero: {
     headline: {
-      en: 'Your Team\'s AI Transformation, Guided and Measured',
-      fr: 'La transformation IA de votre équipe, guidée et mesurée',
+      en: 'AI Doesn\'t Just Automate Tasks. It Reorganizes Your Entire Organization.',
+      fr: 'L\'IA ne fait pas qu\'automatiser des tâches. Elle réorganise toute votre organisation.',
     },
     subheadline: {
-      en: 'An AI-coached platform where every employee builds a personal transition plan — and managers track the transformation across the organization.',
-      fr: 'Une plateforme coachée par IA où chaque employé construit un plan de transition personnel — et les gestionnaires suivent la transformation à travers l\'organisation.',
+      en: 'An operational framework and coaching platform for navigating the structural transformation — from role evolution to org-wide readiness.',
+      fr: 'Un cadre opérationnel et une plateforme de coaching pour naviguer la transformation structurelle — de l\'évolution des rôles à la préparation organisationnelle.',
     },
     variant: 'dark' as const,
     cta: {
