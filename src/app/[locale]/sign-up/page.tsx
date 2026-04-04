@@ -129,7 +129,7 @@ export default async function SignUpPage({
           <div className="mb-12 border-t border-slate-200" />
           <form
             className="mx-auto max-w-2xl space-y-6"
-            action="https://formspree.io/f/placeholder"
+            action="https://formspree.io/f/mreooerq"
             method="POST"
           >
             {/* Name + Email */}
