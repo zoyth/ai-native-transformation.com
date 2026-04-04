@@ -34,7 +34,10 @@ export const navigation: NavigationConfig = {
       {
         id: 'framework',
         label: { en: 'Framework', fr: 'Cadre' },
-        href: 'https://framework.ai-native-transformation.com',
+        href: {
+          en: 'https://framework.ai-native-transformation.com',
+          fr: 'https://framework.ai-native-transformation.com/fr',
+        },
         external: true,
       },
     ],
@@ -101,7 +104,10 @@ export const navigation: NavigationConfig = {
           {
             id: 'framework',
             label: { en: 'AI Transformation Framework', fr: 'Cadre de transformation IA' },
-            href: 'https://framework.ai-native-transformation.com',
+            href: {
+              en: 'https://framework.ai-native-transformation.com',
+              fr: 'https://framework.ai-native-transformation.com/fr',
+            },
             external: true,
           },
         ],
