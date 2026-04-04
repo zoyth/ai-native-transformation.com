@@ -106,13 +106,13 @@ const features = {
 const cta = {
   en: {
     heading: 'Ready to Transform Your Team?',
-    text: 'Currently in pilot with three SaaS companies undergoing AI transformation. If you\'re leading a 20-200 person team and want to make AI a core competency, let\'s talk.',
-    button: 'Connect on LinkedIn',
+    text: 'Currently in pilot with two SaaS companies undergoing AI transformation. If you\'re leading a 20-200 person team and want to make AI a core competency, let\'s talk.',
+    button: 'Apply for Early Access',
   },
   fr: {
     heading: 'Prêt à transformer votre équipe?',
-    text: 'Présentement en pilote avec trois entreprises SaaS en transformation IA. Si vous dirigez une équipe de 20 à 200 personnes et souhaitez faire de l\'IA une compétence fondamentale, parlons-en.',
-    button: 'Se connecter sur LinkedIn',
+    text: 'Présentement en pilote avec deux entreprises SaaS en transformation IA. Si vous dirigez une équipe de 20 à 200 personnes et souhaitez faire de l\'IA une compétence fondamentale, parlons-en.',
+    button: 'Postuler pour l\'accès anticipé',
   },
 };
 
@@ -181,7 +181,7 @@ export default async function ProductPage({
                 <h3 className="mb-2 text-lg font-bold text-slate-900">
                   {step.title}
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-base text-slate-600 leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default async function ProductPage({
                 <h3 className="mb-2 text-lg font-bold text-slate-900">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-base text-slate-600 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -225,9 +225,7 @@ export default async function ProductPage({
             {cta[t].text}
           </p>
           <a
-            href="https://www.linkedin.com/in/francoislane/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`/${locale}/sign-up`}
             className="inline-flex items-center rounded-lg border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 hover:bg-slate-50"
           >
             {cta[t].button}

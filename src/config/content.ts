@@ -22,10 +22,10 @@ export const content = {
     cta: {
       primary: {
         text: {
-          en: 'Get in Touch',
-          fr: 'Nous contacter',
+          en: 'Apply for Early Access',
+          fr: 'Postuler pour l\'accès anticipé',
         },
-        href: 'https://www.linkedin.com/in/francoislane/',
+        href: '/sign-up',
       },
       secondary: {
         text: {

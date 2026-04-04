@@ -127,13 +127,13 @@ const differentiation = {
 const cta = {
   en: {
     heading: 'Ready to Transform Your Team?',
-    text: 'Currently in pilot with three SaaS companies undergoing AI transformation. If you\'re leading a 20-200 person team and want to make AI a core competency, let\'s talk.',
-    button: 'Connect on LinkedIn',
+    text: 'Currently in pilot with two SaaS companies undergoing AI transformation. If you\'re leading a 20-200 person team and want to make AI a core competency, let\'s talk.',
+    button: 'Apply for Early Access',
   },
   fr: {
     heading: 'Prêt à transformer votre équipe?',
-    text: 'Présentement en pilote avec trois entreprises SaaS en transformation IA. Si vous dirigez une équipe de 20 à 200 personnes et souhaitez faire de l\'IA une compétence fondamentale, parlons-en.',
-    button: 'Se connecter sur LinkedIn',
+    text: 'Présentement en pilote avec deux entreprises SaaS en transformation IA. Si vous dirigez une équipe de 20 à 200 personnes et souhaitez faire de l\'IA une compétence fondamentale, parlons-en.',
+    button: 'Postuler pour l\'accès anticipé',
   },
 };
 
@@ -172,7 +172,7 @@ export default async function HomePage({
             {problem[t].cards.map((card) => (
               <div key={card.title} className="rounded-xl border border-slate-200 p-6">
                 <h3 className="mb-2 text-lg font-bold text-slate-900">{card.title}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">{card.text}</p>
+                <p className="text-base text-slate-600 leading-relaxed">{card.text}</p>
               </div>
             ))}
           </div>
@@ -235,8 +235,8 @@ export default async function HomePage({
           <div className="grid gap-4 md:grid-cols-2">
             {differentiation[t].items.map((item) => (
               <div key={item.theirs} className="rounded-xl border border-slate-200 p-6">
-                <p className="mb-2 text-sm text-slate-400 line-through">{item.theirs}</p>
-                <p className="text-sm font-medium text-slate-900">{item.ours}</p>
+                <p className="mb-2 text-base text-slate-400 line-through">{item.theirs}</p>
+                <p className="text-base font-medium text-slate-900">{item.ours}</p>
               </div>
             ))}
           </div>
@@ -251,8 +251,8 @@ export default async function HomePage({
           </h2>
           <p className="mb-8 text-slate-700 leading-relaxed">
             {t === 'fr'
-              ? 'Ce cadre a été conçu par François Lane, qui dirige actuellement la transformation IA de trois entreprises SaaS. Il n\'est pas né d\'une théorie — il a été construit en réponse aux défis réels d\'amener des équipes de 20 à 200 personnes de « curieux de l\'IA » à « natifs de l\'IA », un employé à la fois.'
-              : 'This framework was designed by François Lane, who is currently leading the AI transformation of three SaaS companies. It wasn\'t born from theory — it was built in response to the real challenges of moving teams of 20-200 people from "AI-curious" to "AI-native," one employee at a time.'}
+              ? 'Ce cadre a été conçu par François Lane, qui dirige actuellement la transformation IA de deux entreprises SaaS. Il n\'est pas né d\'une théorie — il a été construit en réponse aux défis réels d\'amener des équipes de 20 à 200 personnes de « curieux de l\'IA » à « natifs de l\'IA », un employé à la fois.'
+              : 'This framework was designed by François Lane, who is currently leading the AI transformation of two SaaS companies. It wasn\'t born from theory — it was built in response to the real challenges of moving teams of 20-200 people from "AI-curious" to "AI-native," one employee at a time.'}
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-slate-500">
             <span>{t === 'fr' ? 'Pilote avec ~30 personnes' : '~30-person pilot'}</span>
@@ -273,9 +273,7 @@ export default async function HomePage({
             {cta[t].text}
           </p>
           <a
-            href="https://www.linkedin.com/in/francoislane/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`/${locale}/sign-up`}
             className="inline-flex items-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-primary-dark hover:bg-slate-100"
           >
             {cta[t].button}
