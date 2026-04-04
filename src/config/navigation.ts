@@ -14,10 +14,27 @@ export const navigation: NavigationConfig = {
       href: '/',
       width: 1203,
       height: 217,
-      displayHeight: 29,
+      displayHeight: 24,
     },
-    mainNav: [],
+    mainNav: [
+      {
+        id: 'product',
+        label: { en: 'Platform', fr: 'Plateforme' },
+        href: '/product',
+      },
+      {
+        id: 'framework',
+        label: { en: 'Framework', fr: 'Cadre' },
+        href: 'https://framework.ai-native-transformation.com',
+        external: true,
+      },
+    ],
     utilityNav: [
+      {
+        id: 'sign-up',
+        label: { en: 'Early Access', fr: 'Accès anticipé' },
+        href: '/sign-up',
+      },
       {
         id: 'login',
         label: { en: 'Log in', fr: 'Se connecter' },
@@ -31,6 +48,16 @@ export const navigation: NavigationConfig = {
       {
         heading: { en: 'App', fr: 'Application' },
         links: [
+          {
+            id: 'platform',
+            label: { en: 'Platform', fr: 'Plateforme' },
+            href: '/product',
+          },
+          {
+            id: 'sign-up',
+            label: { en: 'Early Access', fr: 'Accès anticipé' },
+            href: '/sign-up',
+          },
           {
             id: 'login',
             label: { en: 'Log in', fr: 'Se connecter' },
@@ -56,7 +83,7 @@ export const navigation: NavigationConfig = {
           {
             id: 'framework',
             label: { en: 'AI Transformation Framework', fr: 'Cadre de transformation IA' },
-            href: 'https://ai.cakemail.com',
+            href: 'https://framework.ai-native-transformation.com',
             external: true,
           },
         ],

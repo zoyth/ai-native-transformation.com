@@ -84,11 +84,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Constrain header and footer containers to match content width.
-   Uses !important to override Tailwind v4 container media queries. */
-header > .container,
-footer > .container {
-  max-width: 80rem !important;
+/* Constrain all containers to match the framework site's content width. */
+.container {
+  max-width: 1152px !important; /* max-w-6xl equivalent */
 }
 
 /* Override framework sticky header to fixed for iOS Chrome/Safari compatibility.

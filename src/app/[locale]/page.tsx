@@ -5,13 +5,50 @@ import type { Locale } from '@zoyth/simple-site-framework/lib/i18n';
 import { HeroSection } from '@/lib/framework';
 import { content } from '@/config/content';
 
+const problem = {
+  en: {
+    heading: 'The Real Challenge',
+    cards: [
+      {
+        title: 'Organizations',
+        text: 'You buy tools, run workshops, and hope adoption happens. It doesn\'t — or it happens unevenly, creating a two-speed organization where some teams leap ahead while others stall.',
+      },
+      {
+        title: 'Individuals',
+        text: 'Employees hear "AI will change your job" but get no guidance on how. The people who figure it out thrive. Everyone else watches the gap grow.',
+      },
+      {
+        title: 'Managers',
+        text: 'You\'re told to "lead the transformation" without a playbook — no way to assess readiness, set role-specific goals, or have the hard conversations when someone isn\'t progressing.',
+      },
+    ],
+  },
+  fr: {
+    heading: 'Le vrai défi',
+    cards: [
+      {
+        title: 'Organisations',
+        text: 'Vous achetez des outils, organisez des ateliers, et espérez que l\'adoption suive. Elle ne suit pas — ou elle est inégale, créant une organisation à deux vitesses.',
+      },
+      {
+        title: 'Individus',
+        text: 'Les employés entendent « l\'IA va changer votre travail » sans recevoir de guidance. Ceux qui s\'adaptent prospèrent. Les autres regardent l\'écart se creuser.',
+      },
+      {
+        title: 'Gestionnaires',
+        text: 'On vous demande de « mener la transformation » sans mode d\'emploi — aucun moyen d\'évaluer la préparation, de fixer des objectifs par rôle, ou d\'avoir les conversations difficiles.',
+      },
+    ],
+  },
+};
+
 const howItWorks = {
   en: {
     heading: 'How It Works',
     steps: [
       {
         title: 'Assess',
-        description: 'Every employee takes a maturity assessment to establish their baseline across five tiers — from Pre-AI to AI-Native. Engineering roles get an additional granular rung ladder.',
+        description: 'Every employee takes a maturity assessment to establish their baseline — individuals are placed on a tier scale, engineering roles on an additional rung ladder.',
       },
       {
         title: 'Coach',
@@ -19,7 +56,7 @@ const howItWorks = {
       },
       {
         title: 'Review',
-        description: 'Managers review submitted plans on four criteria — self-contained, testable, constrained, and decomposable — with AI-assisted pre-scoring to speed things up.',
+        description: 'Managers review submitted plans against specification primitives — with AI-assisted pre-scoring to speed things up.',
       },
     ],
   },
@@ -28,7 +65,7 @@ const howItWorks = {
     steps: [
       {
         title: 'Évaluer',
-        description: 'Chaque employé complète une évaluation de maturité pour établir son point de départ sur cinq niveaux — de Pré-IA à Natif de l\'IA. Les rôles techniques ont une échelle granulaire additionnelle.',
+        description: 'Chaque employé complète une évaluation de maturité — les individus sont placés sur une échelle de niveaux, les rôles techniques sur une échelle d\'échelons additionnelle.',
       },
       {
         title: 'Coacher',
@@ -36,68 +73,52 @@ const howItWorks = {
       },
       {
         title: 'Réviser',
-        description: 'Les gestionnaires révisent les plans soumis selon quatre critères — autonome, vérifiable, délimité et décomposable — avec une pré-évaluation IA pour accélérer le processus.',
+        description: 'Les gestionnaires révisent les plans soumis selon les primitives de spécification — avec une pré-évaluation IA pour accélérer le processus.',
       },
     ],
   },
 };
 
-const features = {
+const differentiation = {
   en: {
-    heading: 'Platform Features',
+    heading: 'Not Another AI Workshop',
     items: [
       {
-        title: 'AI Literacy Assessment',
-        description: 'A structured self-assessment that places every employee on a five-tier maturity scale — from Pre-AI to AI-Native. Engineering roles get an additional rung ladder from Assisted Coding to Autonomous Production.',
+        theirs: 'AI tool adoption',
+        ours: 'Structural transformation — roles, workflows, org design',
       },
       {
-        title: 'AI Coaching Sessions',
-        description: 'A streaming chat interface where an AI coach guides employees through role assessment, AI-first vision, gap analysis, system design, metrics, and milestone planning. Each step produces a scored artifact that employees can revisit and refine.',
+        theirs: 'Generic training courses',
+        ours: 'Guided transition plans built by the employee, reviewed by the manager',
       },
       {
-        title: 'Workflow Census',
-        description: 'A conversational AI intake that documents business workflows across the organization — capturing triggers, inputs/outputs, participants, duration, coordination time, waiting time, and bottlenecks. Each workflow gets an AI opportunity score (1-100) with org-wide category breakdown.',
+        theirs: 'Consultant-dependent',
+        ours: 'Self-serve framework + AI coaching at scale',
       },
       {
-        title: 'Transition Plan Builder',
-        description: 'Scored coaching artifacts are assembled into a structured transition plan that employees can edit before submitting. Plans flow through Draft, Submitted, In Review, and Approved stages with full revision history and snapshots.',
-      },
-      {
-        title: 'Manager Review Dashboard',
-        description: 'Managers see their direct reports\' plan statuses at a glance. Plans are scored on four criteria with AI pre-scoring as hints. Status flows from draft through submission, review, and approval.',
-      },
-      {
-        title: 'Admin Analytics',
-        description: 'Organization-wide KPIs: adoption rates, tier distribution, workflow analysis, AI transformation candidates. Includes GitHub activity metrics and Claude Code usage tracking per employee.',
+        theirs: 'Optimistic ("everyone levels up")',
+        ours: 'Honest about role evolution — including absorption and displacement',
       },
     ],
   },
   fr: {
-    heading: 'Fonctionnalités',
+    heading: 'Pas un autre atelier IA',
     items: [
       {
-        title: 'Évaluation de la littératie IA',
-        description: 'Une auto-évaluation structurée qui situe chaque employé sur une échelle de maturité à cinq niveaux — de Pré-IA à Natif de l\'IA. Les rôles techniques ont une échelle additionnelle allant du Codage assisté à la Production autonome.',
+        theirs: 'Adoption d\'outils IA',
+        ours: 'Transformation structurelle — rôles, flux de travail, conception organisationnelle',
       },
       {
-        title: 'Sessions de coaching IA',
-        description: 'Une interface de chat en streaming où un coach IA guide les employés à travers l\'évaluation du rôle, la vision IA, l\'analyse des écarts, la conception de systèmes, les métriques et la planification des jalons. Chaque étape produit un artéfact noté que les employés peuvent revisiter et peaufiner.',
+        theirs: 'Formations génériques',
+        ours: 'Plans de transition guidés, construits par l\'employé, révisés par le gestionnaire',
       },
       {
-        title: 'Recensement des flux de travail',
-        description: 'Une saisie conversationnelle par IA qui documente les flux de travail à travers l\'organisation — déclencheurs, entrées/sorties, participants, durée, temps de coordination, temps d\'attente et goulots d\'étranglement. Chaque flux reçoit un score d\'opportunité IA (1-100) avec ventilation par catégorie à l\'échelle de l\'organisation.',
+        theirs: 'Dépendant de consultants',
+        ours: 'Cadre en libre-service + coaching IA à grande échelle',
       },
       {
-        title: 'Constructeur de plans de transition',
-        description: 'Les artéfacts notés du coaching sont assemblés en un plan de transition structuré que les employés peuvent modifier avant soumission. Les plans passent par les étapes Brouillon, Soumis, En révision et Approuvé avec un historique complet et des captures.',
-      },
-      {
-        title: 'Tableau de bord gestionnaire',
-        description: 'Les gestionnaires voient le statut des plans de leurs subordonnés directs. Les plans sont évalués selon quatre critères avec pré-évaluation IA. Le flux va du brouillon à la soumission, la révision et l\'approbation.',
-      },
-      {
-        title: 'Analytiques administrateur',
-        description: 'KPIs organisationnels : taux d\'adoption, distribution des niveaux, analyse des flux de travail, candidats à la transformation IA. Inclut les métriques d\'activité GitHub et le suivi d\'utilisation de Claude Code par employé.',
+        theirs: 'Optimiste (« tout le monde progresse »)',
+        ours: 'Honnête sur l\'évolution des rôles — y compris l\'absorption et le déplacement',
       },
     ],
   },
@@ -105,14 +126,14 @@ const features = {
 
 const cta = {
   en: {
-    heading: 'Interested?',
-    text: 'This app is in active development, currently piloted across a ~30-person team. If you\'re leading an AI transformation at your organization and want to learn more, get in touch.',
-    button: 'Contact François on LinkedIn',
+    heading: 'Ready to Transform Your Team?',
+    text: 'Currently in pilot with two SaaS companies undergoing AI transformation. If you\'re leading a 20-200 person team and want to make AI a core competency, let\'s talk.',
+    button: 'Apply for Early Access',
   },
   fr: {
-    heading: 'Intéressé?',
-    text: 'Cette application est en développement actif, présentement en pilote avec une équipe d\'environ 30 personnes. Si vous menez une transformation IA dans votre organisation et souhaitez en savoir plus, contactez-nous.',
-    button: 'Contacter François sur LinkedIn',
+    heading: 'Prêt à transformer votre équipe?',
+    text: 'Présentement en pilote avec deux entreprises SaaS en transformation IA. Si vous dirigez une équipe de 20 à 200 personnes et souhaitez faire de l\'IA une compétence fondamentale, parlons-en.',
+    button: 'Postuler pour l\'accès anticipé',
   },
 };
 
@@ -132,9 +153,35 @@ export default async function HomePage({
         locale={locale}
       />
 
+      {/* Audience signal */}
+      <div className="bg-hero-gradient-dark -mt-8 pb-8 text-center">
+        <p className="text-sm font-medium tracking-wide text-slate-300 uppercase">
+          {t === 'fr'
+            ? 'Conçu pour les entreprises SaaS de 20 à 200 employés prêtes à faire de l\'IA une compétence fondamentale.'
+            : 'Built for SaaS companies with 20-200 employees ready to make AI a core competency.'}
+        </p>
+      </div>
+
+      {/* Problem */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="mb-10 text-2xl font-bold text-slate-900">
+            {problem[t].heading}
+          </h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            {problem[t].cards.map((card) => (
+              <div key={card.title} className="rounded-xl border border-slate-200 p-6">
+                <h3 className="mb-2 text-lg font-bold text-slate-900">{card.title}</h3>
+                <p className="text-base text-slate-600 leading-relaxed">{card.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="bg-brand-gradient-light py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4">
           <h2 className="mb-12 text-center text-3xl font-bold text-slate-900">
             {howItWorks[t].heading}
           </h2>
@@ -159,33 +206,66 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Features */}
-      <section className="py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="mb-12 text-center text-3xl font-bold text-slate-900">
-            {features[t].heading}
+      {/* Product teaser */}
+      <section className="py-16 text-center">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-2xl font-bold text-slate-900">
+            {t === 'fr' ? 'Évaluation, coaching, plans de transition et analytiques' : 'Assessment, Coaching, Transition Plans, and Analytics'}
           </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {features[t].items.map((feature) => (
-              <div
-                key={feature.title}
-                className="rounded-xl border border-slate-200 p-8"
-              >
-                <h3 className="mb-3 text-xl font-bold text-slate-900">
-                  {feature.title}
-                </h3>
-                <p className="text-slate-700 leading-relaxed">
-                  {feature.description}
-                </p>
+          <p className="mb-6 text-slate-700 leading-relaxed">
+            {t === 'fr'
+              ? 'Six modules intégrés qui couvrent le parcours complet — de l\'évaluation initiale au tableau de bord de suivi organisationnel.'
+              : 'Six integrated modules that cover the full journey — from initial assessment to org-wide tracking dashboards.'}
+          </p>
+          <a
+            href={`/${locale}/product`}
+            className="inline-flex items-center rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white hover:bg-primary-hover"
+          >
+            {t === 'fr' ? 'Voir la plateforme' : 'See the Platform'}
+          </a>
+        </div>
+      </section>
+
+      {/* Differentiation */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="mb-10 text-2xl font-bold text-slate-900">
+            {differentiation[t].heading}
+          </h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            {differentiation[t].items.map((item) => (
+              <div key={item.theirs} className="rounded-xl border border-slate-200 p-6">
+                <p className="mb-2 text-base text-slate-400 line-through">{item.theirs}</p>
+                <p className="text-base font-medium text-slate-900">{item.ours}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Credibility */}
+      <section className="bg-slate-50 py-16">
+        <div className="container mx-auto max-w-3xl px-4 text-center">
+          <h2 className="mb-6 text-xl font-bold text-slate-900">
+            {t === 'fr' ? 'Qui est derrière ce projet' : 'Who Built This'}
+          </h2>
+          <p className="mb-8 text-slate-700 leading-relaxed">
+            {t === 'fr'
+              ? 'Ce cadre a été conçu par François Lane, qui dirige actuellement la transformation IA de deux entreprises SaaS. Il n\'est pas né d\'une théorie — il a été construit en réponse aux défis réels d\'amener des équipes de 20 à 200 personnes de « curieux de l\'IA » à « natifs de l\'IA », un employé à la fois.'
+              : 'This framework was designed by François Lane, who is currently leading the AI transformation of two SaaS companies. It wasn\'t born from theory — it was built in response to the real challenges of moving teams of 20-200 people from "AI-curious" to "AI-native," one employee at a time.'}
+          </p>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-slate-500">
+            <span>{t === 'fr' ? 'Pilote avec ~30 personnes' : '~30-person pilot'}</span>
+            <span>{t === 'fr' ? 'Bilingue EN/FR' : 'Bilingual EN/FR'}</span>
+            <span>{t === 'fr' ? 'Cadre open source (CC BY 4.0)' : 'Open source framework (CC BY 4.0)'}</span>
+            <span>{t === 'fr' ? 'En production' : 'Running in production'}</span>
+          </div>
+        </div>
+      </section>
+
       {/* Contact CTA */}
       <section className="bg-hero-gradient-dark py-20">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-3xl px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold text-white">
             {cta[t].heading}
           </h2>
@@ -193,9 +273,7 @@ export default async function HomePage({
             {cta[t].text}
           </p>
           <a
-            href="https://www.linkedin.com/in/francoislane/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`/${locale}/sign-up`}
             className="inline-flex items-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-primary-dark hover:bg-slate-100"
           >
             {cta[t].button}
