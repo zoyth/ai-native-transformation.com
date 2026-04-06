@@ -4,6 +4,7 @@
 import type { Metadata } from 'next';
 import type { Locale } from '@zoyth/simple-site-framework/lib/i18n';
 import { buildPageMetadata } from '@/lib/metadata';
+import { SignUpForm } from './sign-up-form';
 
 const copy = {
   en: {
@@ -127,137 +128,7 @@ export default async function SignUpPage({
       <section className="pb-20 pt-4">
         <div className="container mx-auto px-4">
           <div className="mb-12 border-t border-slate-200" />
-          <form
-            className="mx-auto max-w-2xl space-y-6"
-            action="https://formspree.io/f/mreooerq"
-            method="POST"
-          >
-            {/* Name + Email */}
-            <div className="grid gap-6 md:grid-cols-2">
-              <div>
-                <label htmlFor="name" className="mb-1.5 block text-base font-medium text-slate-900">
-                  {c.form.name}
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="mb-1.5 block text-base font-medium text-slate-900">
-                  {c.form.email}
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none"
-                />
-              </div>
-            </div>
-
-            {/* Company + URL */}
-            <div className="grid gap-6 md:grid-cols-2">
-              <div>
-                <label htmlFor="company" className="mb-1.5 block text-base font-medium text-slate-900">
-                  {c.form.company}
-                </label>
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  required
-                  className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none"
-                />
-              </div>
-              <div>
-                <label htmlFor="url" className="mb-1.5 block text-base font-medium text-slate-900">
-                  {c.form.url}
-                </label>
-                <input
-                  type="url"
-                  id="url"
-                  name="url"
-                  placeholder={c.form.urlPlaceholder}
-                  className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none"
-                />
-              </div>
-            </div>
-
-            {/* Size + Role */}
-            <div className="grid gap-6 md:grid-cols-2">
-              <div>
-                <label htmlFor="size" className="mb-1.5 block text-base font-medium text-slate-900">
-                  {c.form.size}
-                </label>
-                <select
-                  id="size"
-                  name="size"
-                  required
-                  className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none"
-                >
-                  {c.form.sizeOptions.map((opt) => (
-                    <option key={opt.value} value={opt.value}>{opt.label}</option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label htmlFor="role" className="mb-1.5 block text-base font-medium text-slate-900">
-                  {c.form.role}
-                </label>
-                <select
-                  id="role"
-                  name="role"
-                  required
-                  className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none"
-                >
-                  {c.form.roleOptions.map((opt) => (
-                    <option key={opt.value} value={opt.value}>{opt.label}</option>
-                  ))}
-                </select>
-              </div>
-            </div>
-
-            {/* Challenge */}
-            <div>
-              <label htmlFor="challenge" className="mb-1.5 block text-base font-medium text-slate-900">
-                {c.form.challenge}
-              </label>
-              <textarea
-                id="challenge"
-                name="challenge"
-                rows={3}
-                placeholder={c.form.challengePlaceholder}
-                className="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none"
-              />
-            </div>
-
-            {/* Notify checkbox */}
-            <div className="flex items-center gap-3">
-              <input
-                type="checkbox"
-                id="notify"
-                name="notify"
-                defaultChecked
-                className="h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary"
-              />
-              <label htmlFor="notify" className="text-base text-slate-700">
-                {c.form.notify}
-              </label>
-            </div>
-
-            {/* Submit */}
-            <button
-              type="submit"
-              className="w-full rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white hover:bg-primary-hover focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-none md:w-auto"
-            >
-              {c.form.submit}
-            </button>
-          </form>
+          <SignUpForm copy={c.form} />
         </div>
       </section>
     </>
