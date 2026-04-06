@@ -26,6 +26,8 @@ const nextConfig: NextConfig = {
       presets: ['google-analytics'],
       contentSecurityPolicy: {
         'frame-ancestors': ["'none'"],
+        'connect-src': ['https://formspree.io'],
+        'form-action': ['https://formspree.io'],
       },
     });
 
