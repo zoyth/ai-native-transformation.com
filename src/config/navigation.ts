@@ -114,8 +114,8 @@ export const navigation: NavigationConfig = {
       },
     ],
     copyright: {
-      en: 'Copyright © {year} François Lane. All rights reserved.',
-      fr: 'Copyright © {year} François Lane. Tous droits réservés.',
+      en: 'Copyright © {year} Kenogami AI Inc. All rights reserved.',
+      fr: 'Copyright © {year} Kenogami AI Inc. Tous droits réservés.',
     },
   },
 };
